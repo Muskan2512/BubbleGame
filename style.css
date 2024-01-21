@@ -1,0 +1,123 @@
+*{
+  margin:0;
+  padding: 0;
+  font-family: cursive;
+}
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(48, 223, 183);
+  position: relative;
+}
+.box{
+  height: 85vh;
+  width: 70vw;
+  background-color: white;
+  border-radius: 15px;  
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+.box-1{
+  height: 15%;
+  width: 100%;
+  background-color: rgb(15, 78, 11);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  /* background-color: red; */
+  width: calc(100% / 3);
+  height: 100%;
+  color: whitesmoke;
+}
+.item .tag{
+  font-size: 1.25rem;
+  /* color:rgb(48, 223, 183); */
+}
+.item .value{
+  border: 1px solid white;
+  padding: 1vh 1vh;
+  width: 5vmin;
+  font-size: 0.85rem;
+  border-radius: 10px;
+  color: aquamarine;
+  user-select: none;
+}
+.box-2{
+  height: calc(100% - 15%);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap:1vw;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1vw;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  /* background-color: blue; */
+
+}
+.playbox{
+  /* height: calc(100% /10);
+  width: 6vh; */
+  /* font-size:0.8rem; */
+  padding: 2vmin 2vmin;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  color: rgb(205, 201, 201);
+  
+}
+.GameOver{
+  text-align: center;
+  /* background-color: magenta; */
+  width: 100%;
+  font-size: 4vmin;
+  color: green;
+}
+.start{
+  border: 1px solid white;
+  background-color: white;
+  color:green ;
+  padding:2vmin 2vmax;
+  border-radius: 5px;
+  font-size: 1rem;
+  position: absolute;
+  top:3vh;
+  left: 40vmin;
+  cursor: pointer;
+}
+#timer{
+  visibility:hidden;
+}
+@media screen and (max-width:620px){
+  .playbox{
+    font-size: 0.8rem;
+  }
+  .item>.tag{
+    font-size: 1rem;
+  }
+  .item{
+    gap:0.5rem;
+  }
+  .start{
+    padding:5px 10px;
+    font-size: 0.8rem;
+    left:30vh;
+  }
+  
+}
